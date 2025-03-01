@@ -33,7 +33,7 @@ def backup_config(ip, api_key):
 
     # Generate timestamp for filename
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    backup_filename = f"{BACKUP_DIR}/config_{timestamp}.xml"
+    backup_filename = f"{BACKUP_DIR}/config_{timestamp}.tgz"
 
     response = requests.get(url, verify=False)
 
